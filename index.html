@@ -1,85 +1,78 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
+  <!DOCTYPE html>
+  <html lang="en" dir="ltr">
 
-<head>
-  <meta charset="utf-8">
-  <title>Paly with DOM element</title>
-  <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="style.css">
-</head>
+  <head>
+    <meta charset="utf-8">
+    <title>Paly with DOM element</title>
+    <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
 
-<body>
-<!-- <div> -->
-<div class="container">
-  <h1 id="title">Play with DOM elements</h1>
+  <body>
+  <div class="container">
+    <h1 id="title">Play with DOM elements</h1>
 
-  <div class="sub-container">
-      <p class="sub-heading"> Click the following button to see changes! </p>
-      <div class="clickBtn">
-          <button class="infoBtn btnStndrd" onclick="showPersonalInfo()">Welcome</button>
-          <button class="changeBtn btnStndrd " onclick="changeButton()">My name</button>
-          <button class = "btnStndrd" onclick="showText()">My Info</button>
+    <div class="sub-container">
+        <p class="sub-heading"> Click the following button to see changes! </p>
+        <div class="clickBtn">
+            <button class="infoBtn btnStndrd" onclick="showPersonalInfo()">Welcome</button>
+            <button class="changeBtn btnStndrd " onclick="changeButton()">My name</button>
+            <button class = "btnStndrd" onclick="showText()">My Info</button>
+        </div>
+      <div id = "displayName"> </div>
+      <div id="showInfo">
+          <p>Name: Chandra Shekhar Mondal </p>
+          <p>Dept: Web Development </p>
+          <p>School: Copenhagen Business Academy </p>
       </div>
-    <div id = "displayName"> </div>
-    <div id="showInfo">
-        <p>Name: Chandra Shekhar Mondal </p>
-        <p>Dept: Web Development </p>
-        <p>School: Copenhagen Business Academy </p>
+    </div>
+
+    <div class="sub-container">
+      <p class="sub-heading"> <span class="sub-heading-text">Hear my voice!</span> <span class="sub-heading-text">Hear my voice!</span> <span class="sub-heading-text">Make me big!</span></p>
+      <div class="set">
+        <button class="cock imgSound"></button>
+        <button class="cat imgSound"></button>
+        <button class="bird imgSound" onmouseover="biggerImg(this)" onmouseout="normalImg(this)"></button>
+      </div>
+    </div>
+  <div class="sub-container">
+    <p class="sub-heading"> Calculator! </p>
+    <div class="calDiv set">
+        <input id ="input1" class="txtIpt" placeholder = "First number" type="text" name="num1">
+        <input id ="input2" class="txtIpt" placeholder = "Second number" type="te" name="num2">
+        <button id="add" class="btn-operator" onclick="add()">+</button>
+        <button id="sutract" class="btn-operator" onclick="subtract()">-</button>
+        <button id="multiply" class="btn-operator" onclick="multiply()">*</button>
+        <button id="division" class="btn-operator" onclick="division()">/</button>
+        <label class ="lblTxt">Result : </label><label class ="lblTxt" id="showResult"></label>
     </div>
   </div>
 
-  <div class="sub-container">
-    <p class="sub-heading"> <span class="sub-heading-text">Hear my voice!</span> <span class="sub-heading-text">Hear my voice!</span> <span class="sub-heading-text">Make me big!</span></p>
-    <div class="set">
-      <button class="cock imgSound"></button>
-      <button class="cat imgSound"></button>
-      <button class="bird imgSound" onmouseover="biggerImg(this)" onmouseout="normalImg(this)"></button>
+    <div class="sub-container">
+      <p class="sub-heading"> Dice game! </p>
+      <div class="set">
+        <p id ="headLine"> Player </p>
+        <div class="playerContainer">
+          <div class="playerSubContainer">
+            <p class="player">Player 1</p>
+            <img class="image1" src="">
+          </div>
+          <div class="playerSubContainer">
+            <p class="player">Player 2</p>
+            <img class="image2"src="">
+          </div>
+        </div>
+        <button class="button" onclick="window.location.reload()">Start to Play</button>
     </div>
+  </div>  
   </div>
-<div class="sub-container">
-  <p class="sub-heading"> Calculator! </p>
-  <div class="calDiv set">
-      <input id ="input1" class="txtIpt" placeholder = "First number" type="text" name="num1">
-      <input id ="input2" class="txtIpt" placeholder = "Second number" type="te" name="num2">
-      <button id="add" class="btn-operator" onclick="add()">+</button>
-      <button id="sutract" class="btn-operator" onclick="subtract()">-</button>
-      <button id="multiply" class="btn-operator" onclick="multiply()">*</button>
-      <button id="division" class="btn-operator" onclick="division()">/</button>
-      <label class ="lblTxt">Result : </label><label class ="lblTxt" id="showResult"></label>
-  </div>
-</div>
+    <footer>
+      <span class="footerText">*JavaScript Assignment</span> 
+      <span class="footerText">*Presented by Chandra Shekhar Mondal</span>
+                  <span class="footerText">*Web Development</span>
+    </footer>
 
-  <div class="sub-container">
-    <p class="sub-heading"> Dice game! </p>
-    <div class="set">
-      <p id ="headLine"> Player </p>
-      <div class="playerContainer">
-        <div class="playerSubContainer">
-          <p class="player">Player 1</p>
-          <img class="image1" src="">
-        </div>
-        <div class="playerSubContainer">
-          <p class="player">Player 2</p>
-          <img class="image2"src="">
-        </div>
-      </div>
-      <button class="button" onclick="window.location.reload()">Start to Play</button>
-  </div>
-</div>  
+    <script type="text/javascript" src="script.js"></script>
+  </body>
 
-</div>
-  <footer>
-    <span class="footerText">*JavaScript Assignment</span> 
-    <span class="footerText">*Presented by Chandra Shekhar Mondal</span>
-                <span class="footerText">*Web Development</span>
-  </footer>
-
-  <script type="text/javascript">
-
-
-  </script>
-<!-- </div> -->
-  <script type="text/javascript" src="script.js"></script>
-</body>
-
-</html>
+  </html>
