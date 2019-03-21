@@ -1,0 +1,168 @@
+body {
+  text-align: center;
+  background-color: #a3a3c2;
+  /*#283149;*/
+}
+
+#showInfo {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: lightblue;
+  margin-top: 20px;
+}
+
+h1 {
+  font-size: 5rem;
+  color: #DBEDF3;
+  font-family: "Arvo", cursive;
+  text-shadow: 3px 0 #DA0463;
+
+}
+.btn-operator{
+  width: 60px;
+  height: 40px;
+  font-size: 25px;
+  margin:10px;
+}
+
+.txtIpt{
+  width: 200px;
+  height: 35px;
+  font-size: 25px;
+  margin:10px;
+}
+.calDiv{
+  display: flex;
+  justify-content: center;
+}
+footer {
+  color: #DBEDF3;
+  font-family: sans-serif;
+}
+
+.cock {
+  background-image: url(./cock.jpg);
+  background-size: cover;
+
+}
+
+.cat {
+background-image: url(./cat.jpg);
+background-size: cover;
+}
+
+.bird {
+background-image: url(./bird.jpg);
+background-size: cover;
+}
+
+.set {
+  margin: 10% auto;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.pressed {
+  box-shadow: 0 3px 4px 0 #DBEDF3;
+  opacity: 0.5;
+}
+
+.red {
+  color: red;
+}
+footer{
+  margin-top: 20px;
+}
+.footerText{
+  margin: 10px;
+  color: black
+}
+.imgSound {
+  outline: none;
+  border: 10px solid #996633;
+  font-size: 5rem;
+  font-family: 'Arvo', cursive;
+  line-height: 2;
+  font-weight: 900;
+  color: #DA0463;
+  text-shadow: 3px 0 #DBEDF3;
+  border-radius: 15px;
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  margin: 10px;
+  background-color: white;
+}
+
+
+
+
+.btnStndrd{
+  font-size: 20px;
+  height: 80px;
+  width: 200px;
+  margin: 10px;
+  border: 10px solid #996633;
+  text-shadow: 3px 0 #DBEDF3;
+}
+
+.clickBtn{
+  display: flex;
+  justify-content: center;
+}
+
+#headLine{
+    text-align: center;
+    font-size: 40px;
+    font-family: cursive;
+    padding-top: 20px;
+    margin: 0px;
+  }
+
+  .playerContainer{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: gray;
+    border-radius: 30px;
+
+
+  }
+  .playerSubContainer{
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+
+  }
+  .player{
+    font-family: cursive;
+    font-size: 20px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 30px;
+
+  }
+
+  .button
+  {
+      width: 30%;
+    height: 50px;
+    border-radius: 30px;
+    font-family: cursive;
+    font-size: 30px;
+  }
+  
+  .container{
+    background-color: gray;
+    text-align: center;
+    max-width: 80%;
+    margin: auto;
+    border-radius: 30px;
+  }

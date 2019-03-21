@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Drum Kit</title>
+  <!-- <link rel="stylesheet" href="styles.css"> -->
+  <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+<div>
+  <h1 id="title">Play with DOM elements</h1>
+<div>
+  <section>
+    <div class="clickBtn">
+    <button class="infoBtn btnStndrd" onclick="showPersonalInfo()">Welcome</button>
+   
+
+    <button class="changeBtn btnStndrd " onclick="changeButton()">My name</button>
+
+    <button class = "btnStndrd" onclick="showText()">My Info</button>
+  </div>
+     <div id = "displayName"> </div>
+    <div id="showInfo">
+        <p>Name: Chandra Shekhar Mondal </p>
+        <p>Dept: Web Development </p>
+        <p>School: Copenhagen Business Academy </p>
+    </div>
+  </section>
+  <div class="set">
+    <button class="cock imgSound"></button>
+    <button class="cat imgSound"></button>
+    <button class="bird imgSound" onmouseover="biggerImg(this)" onmouseout="normalImg(this)"></button>
+     </div>
+
+  <div class="calDiv">
+    <input id ="input1" class="txtIpt" type="text" name="num1">
+    <input id ="input2" class="txtIpt" type="te" name="num2">
+    <button id="add" class="btn-operator" onclick="add()">+</button>
+    <button id="sutract" class="btn-operator" onclick="subtract()">-</button>
+    <button id="multiply" class="btn-operator" onclick="multiply()">*</button>
+    <button id="division" class="btn-operator" onclick="division()">/</button>
+    <label style ="font-size:40px; color: white;">Result: </label><label id="showResult" style ="font-size:40px; color: green;" ></label>
+  </div>
+
+  <div class="container">
+      <p id ="headLine"> Player </p>
+      <div class="playerContainer">
+        <div class="playerSubContainer">
+          <p class="player">Player 1</p>
+          <img class="image1" src="">
+        </div>
+        <div class="playerSubContainer">
+          <p class="player">Player 2</p>
+          <img class="image2"src="">
+        </div>
+      </div>
+      <button class="button" onclick="window.location.reload()">Start to Play</button>
+    </div>  
+
+</div>
+  <footer>
+    <span class="footerText">*JavaScript Assignment*</span> 
+    <span class="footerText">*Present by: Chandra Shekhar Mondal*</span>
+                <span class="footerText">*Web Development*</span>
+  </footer>
+
+  <script type="text/javascript">
+
+function biggerImg(x) {
+  x.style.height = "250px";
+  x.style.width = "250px";
+}
+
+function normalImg(x) {
+  x.style.height = "150px";
+  x.style.width = "150px";
+}
+
+window.onload = function() {
+  document.getElementById('showInfo').style.display = 'none';
+};
+  function showText() {
+    var x = document.getElementById("showInfo");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+  // document.querySelector(".changeBtn").addEventListener('click', changeButton);
+
+    function changeButton(){
+      let changeBtnTxt = document.querySelector(".changeBtn");
+      changeBtnTxt.style.color = 'white';
+      changeBtnTxt.style.backgroundColor = 'black';
+      changeBtnTxt.style.padding = '10px';
+      changeBtnTxt.style.width = '350px';
+      changeBtnTxt.innerHTML = 'New Button Look';
+      changeBtnTxt.style.textAlign = 'center';
+    }
+
+  </script>
+</div>
+  <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
