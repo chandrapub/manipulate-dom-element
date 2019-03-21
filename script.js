@@ -4,24 +4,24 @@
 //Welcome event
 	function showPersonalInfo()
 		{
-		let name = document.createElement("span");
-		name.style.color = "Black";
-		name.style.fontSize = "100px";
-		name.innerHTML = "Welcome!!!";
-		document.querySelector("#displayName").appendChild(name);
+		let welcome = document.createElement("span");
+		if(welcome.style.display==="none"){
+			welcome.style.color = "Black";
+		welcome.style.fontSize = "100px";
+		welcome.innerHTML = "Welcome!!!";
+		document.querySelector("#displayName").appendChild(welcome);
+	}else{
+		welcome.style.display = "none";
+		 }
 	}
-
-
-	
 
 //Change button look 
 function changeButton(){
 	      let changeBtnTxt = document.querySelector(".changeBtn");
 	      changeBtnTxt.style.color = 'white';
 	      changeBtnTxt.style.backgroundColor = 'black';
-	      changeBtnTxt.style.padding = '10px';
-	      changeBtnTxt.style.width = '350px';
-	      changeBtnTxt.innerHTML = 'New Button Look';
+	      changeBtnTxt.style.width = '400px';
+	      changeBtnTxt.innerHTML = 'Chandra Shekha Mondal';
 	      changeBtnTxt.style.textAlign = 'center';
 	    }
 
@@ -30,17 +30,13 @@ function changeButton(){
 	  document.getElementById('showInfo').style.display = 'none';
 	};
 	  function showText() {
-	    var x = document.getElementById("showInfo");
+	    let x = document.getElementById("showInfo");
 	    if (x.style.display === "none") {
 	      x.style.display = "block";
 	    } else {
 	      x.style.display = "none";
 	    }
-	  }
-
-	    
-
-
+	  }  
 
 	document.querySelector('.cock').addEventListener('mouseover', playSound);
 	function playSound(){
@@ -51,7 +47,6 @@ function changeButton(){
 
 	document.querySelector('.cat').addEventListener('mouseover', playSound1);
 	function playSound1(){
-
 	let sound = new Audio("./Cat-meow.mp3"); 
 	sound.play();
 	}
@@ -139,7 +134,6 @@ function biggerImg(x) {
 		function compareResult(index2){
 
 				let index1 = imageArray.indexOf(getImage1);
-
 
 				if(index1>index2){
 					document.getElementById("headLine").innerHTML = "Player 1 Won !!!!";
